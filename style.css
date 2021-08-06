@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+
+.secao {
+    background-color: #BA68C8;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.container {
+       max-width: 1120px;
+       padding: 0 120px;
+}
+
+.content {
+    font-family: raleway;
+    color: #FFFFFF;
+}
+
+.sobre {
+    color: #703E78;
+    font-size: 24px;
+    font-weight: 600px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.quebra {
+    display: none;
+}
+ 
+h2 {
+    margin: 60px 0 30px 0;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../assets/nina-image.svg);
+    width: 265px;
+    height: 308px;
+    top: -160px;
+    left: 580px;
+}
+
+#meu-link {
+    border-bottom: 3px dashed #703E78;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-size: 24px;
+}
+
+#meu-link:hover{
+    border-bottom: 3px dashed #703E78;
+    text-decoration: none;
+    color: #703E78;
+    font-size: 24px;
+}
+
+@media (max-width: 1199.98px) {
+    h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../assets/nina-image.svg");
+    width: 265px;
+    height: 308px;
+    top: -160px;
+    left: 580px;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .quebra {
+        display: flex;
+    }
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url("../assets/nina-image.svg");
+        width: 233px;
+        height: 266px;
+        top: -128px;
+        left: 317px;
+        }
+}
+
+@media (max-width: 767.98px) {
+    
+    .secao {
+        padding-top: 50px;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url("../assets/nina-image.svg");
+        width: 233px;
+        height: 266px;
+        top: -128px;
+        left: 317px;
+        }
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 36px;
+    }
+
+
+    .sobre {
+font-size: 18px;
+    }
+
+    h2 {
+    font-size: 18px;
+    }
+
+    #meu-link {
+        font-size: 22px;
+    }
+
+    #meu-link:hover {
+        font-size: 22px;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url("../assets/nina-image.svg");
+        width: 171px;
+        height: 198px;
+        top: -160px;
+        left: 0px;
+        }
+}
