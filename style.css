@@ -4,34 +4,40 @@ body {
 
 .secao {
     background-color: #BA68C8;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-
 }
 
 .container {
-       max-width: 1120px;
-       padding: 0 120px;
+    max-width: 900px;
+    padding: 0 120px;
+    margin: 0 auto;
 }
 
 .content {
     font-family: raleway;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-wrap {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sobre {
     color: #703E78;
     font-size: 24px;
-    font-weight: 600px;
+    font-weight: 600;
     margin: 10px 0;
 }
 
 h1 {
     font-size: 64px;
-    margin: 20px 0;
+    margin: 250px 0 20px 0;
     position: relative;
 }
 
@@ -40,11 +46,12 @@ h1 {
 }
  
 h2 {
+    font-size: 22px;
     margin: 60px 0 30px 0;
 }
 
 h3 {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 h1::after {
@@ -62,14 +69,14 @@ h1::after {
     border-bottom: 3px dashed #703E78;
     text-decoration: none;
     color: #FAFAFA;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #meu-link:hover{
     border-bottom: 3px dashed #703E78;
     text-decoration: none;
     color: #703E78;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 @media (max-width: 1199.98px) {
@@ -91,12 +98,7 @@ h1::after {
         display: flex;
     }
     .container {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        max-width: 100%;
-        padding: 30px;
+        padding: 0 30px;
     }
 
     h1::after {
@@ -113,9 +115,6 @@ h1::after {
 
 @media (max-width: 767.98px) {
     
-    .secao {
-        padding-top: 50px;
-    }
 
     h1::after {
         content: "";
@@ -127,28 +126,36 @@ h1::after {
         top: -128px;
         left: 317px;
         }
+
+    .content:nth-child(1) {
+        min-height: 100vh;
+    }
+    
+    .content:nth-child(2) {
+        padding-bottom: 80px;
+    }
 }
 
 @media (max-width: 575.98px) {
     h1 {
-        font-size: 36px;
+        font-size: 30px;
+        margin-top: 140px;
     }
 
-
     .sobre {
-font-size: 18px;
+        font-size: 16px;
     }
 
     h2 {
-    font-size: 18px;
+        font-size: 18px;
     }
 
     #meu-link {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     #meu-link:hover {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     h1::after {
@@ -156,9 +163,9 @@ font-size: 18px;
         display: block;
         position: absolute;
         background: url("../assets/nina-image.svg");
-        width: 171px;
-        height: 198px;
-        top: -160px;
+        width: 150px;
+        height: 174px;
+        top: -138px;
         left: 0px;
         }
 }
